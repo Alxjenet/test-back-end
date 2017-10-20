@@ -11,3 +11,7 @@
 |
 */
 
+Route::group(['middleware' => 'api'], function ()
+{
+    Route::get('/aircraft', 'V1\SearchController@index');
+});
